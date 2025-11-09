@@ -26,8 +26,8 @@ def query_latest_at_time(device_id, query_time):
     latest = valid_updates.sort_values('time').iloc[-1]
     return latest.to_dict()
 
-# Example:
+
 start_time= datetime.now()
 result = query_latest_at_time(25029, '2021-10-23T12:32:45Z')
 print("time taken to get latest data:" , datetime.now()-start_time)
-print(result)
+# print(result)
